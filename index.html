@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Ferrari Guide - Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+     
+</head>
+<body>
+    <header>
+        <h1>Bruno Ferrari Guide - Portfolio</h1>
+    </header>
+    <main>
+        <section id="home" onclick="toggleSection('home-content')">
+            <div class="vaporwave">
+                <h2>Home</h2>
+                <div id="home-content">
+                    <p>Welcome to my personal portfolio. I am Bruno Ferrari Guide, a team leader in software development and project management.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about" onclick="toggleSection('about-content')">
+            <h2>About Me</h2>
+            <div id="about-content" class="hidden">
+                <p>I am an experienced leader of software development and project management teams. I have a strong background in agile frameworks, career management, and effective communication with multidisciplinary teams.</p>
+                <p>Currently, I am an Engineering Leader at Blip, managing multidisciplinary product development teams. I have also held leadership positions at Stilingue and Verbio, where I focused on project management, people development, and strategic planning.</p>
+                <p>My academic background includes a Doctorate, Master's, and Bachelor's degree in Linguistics from the University of São Paulo. My research has focused on computational linguistics, particularly in the areas of hate speech detection and accent analysis in Brazilian Portuguese.</p>
+            </div>
+        </section>
+        <section id="projects" onclick="toggleSection('projects-content')">
+            <h2>Projects</h2>
+            <div id="projects-content" class="hidden">
+                <ul>
+                    <li><strong>Blip:</strong> Leading product development teams, strategic planning, and project management.</li>
+                    <li><strong>Stilingue:</strong> Engineering leader and specialist in computational linguistics.</li>
+                    <li><strong>Verbio:</strong> Project coordinator for natural language technology projects.</li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills" onclick="toggleSection('skills-content')">
+            <h2>Skills and CV</h2>
+            <div id="skills-content" class="hidden">
+                <ul>
+                    <li>Agile Frameworks: SCRUM, Kanban, Agile Metrics</li>
+                    <li>Project Management: Jira, Trello, Azure, Microsoft Project</li>
+                    <li>Natural Language Processing: Prompt Engineering, Data Annotation, Ontology Design</li>
+                    <li>Programming: Python (NLTK, Pandas, Spacy)</li>
+                </ul>
+                <p><a href="path/to/your/cv.pdf" target="_blank">Download my CV</a></p>
+            </div>
+        </section>
+        <section id="links" onclick="toggleSection('links-content')">
+            <h2>Links</h2>
+            <div id="links-content" class="hidden">
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/bruno-f-guide/" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/brunoguide" target="_blank">GitHub</a></li>
+                    <li><a href="https://twitter.com/brunoguide" target="_blank">Twitter</a></li>
+                </ul>
+            </div>
+        </section>
+        <section id="contact" onclick="toggleSection('contact-content')">
+            <h2>Contact Me</h2>
+            <div id="contact-content" class="hidden">
+                <form class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Bruno Ferrari Guide</p>
+    </footer>
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            section.classList.toggle('hidden');
+        }
+    </script>
+</body>
+</html>
